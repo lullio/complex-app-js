@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+// css files, browser base files, acessível por qualquer um q usa o app
+app.use(express.static('public'));
 
 // render o arquivo html da pasta views, express option views
 app.set('views', 'views'); // 1ºviews configuration option 2ºnome da pasta 
